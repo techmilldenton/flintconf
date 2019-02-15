@@ -1,0 +1,27 @@
+<!-- Jquery-2.2.4 JS -->
+<script src={{ "/js/jquery-2.2.4.min.js" | prepend: site.baseurl }}></script>
+<!-- Popper js -->
+<script src={{ "/js/popper.min.js" | prepend: site.baseurl }}></script>
+<!-- Bootstrap-4 Beta JS -->
+<script src={{ "/js/bootstrap.min.js" | prepend: site.baseurl }}></script>
+<!-- All Plugins JS -->
+<script src={{ "/js/plugins.js" | prepend: site.baseurl }}></script>
+<!-- Slick Slider Js-->
+<script src={{ "/js/slick.min.js" | prepend: site.baseurl }}></script>
+<!-- Footer Reveal JS -->
+<script src={{ "/js/footer-reveal.min.js" | prepend: site.baseurl }}></script>
+<!-- Active JS -->
+<script src={{ "/js/active.js" | prepend: site.baseurl }}></script>
+
+
+{% if site.google_tag_manager %}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{% endif %}
+
+{% if site.addthis %}
+<!-- Addthis -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis }}"></script>
+{% endif %}

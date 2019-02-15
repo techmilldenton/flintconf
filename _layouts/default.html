@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="not-front {{ page.slug }} {{ page.body_class }}">
+
+    {%- include header.html -%}
+
+    {%- include page-top.html -%}
+
+    <main class="main main-raised notification-target" aria-label="Content">
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+    {%- include modals.html -%}
+    {%- include scripts.html -%}
+  </body>
+
+</html>

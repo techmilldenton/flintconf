@@ -1,0 +1,27 @@
+toc:
+  - title: About
+    url: "#"
+    children:
+      - title: Resources
+        url: /resources
+      - title: Code of Conduct
+        url: /conduct
+      - title: About TechMill
+        url: /about-techmill
+      - title: Schedule
+        url: /schedule
+  - title: Challenges
+    url: /challenges
+  - title: Sponsors
+    url: /sponsors
+  - title: Contact
+    url: /contact
+  - title: Register
+    url: https://www.eventbrite.com/e/dfw-open-data-day-tickets-54305774032
+    class: "btn btn-success register-link"
+    target: "_blank"
+footer:
+  - title: Home
+    url: /
+  - title: FAQ
+    url: /faq

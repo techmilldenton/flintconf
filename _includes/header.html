@@ -1,0 +1,49 @@
+<header class="header_area animated">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Menu Area Start -->
+            <div class="col-12 col-lg-10">
+                <div class="menu_area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="/">{{ site.title }}</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <!-- Menu Area -->
+                        <div class="collapse navbar-collapse" id="ca-navbar">
+                            <ul class="navbar-nav ml-auto" id="nav">
+                                {%- for my_page in site.data.navigation.toc -%}
+                                  {%- assign target = my_page.target | default: "_self" -%}
+                                  {%- if my_page.children -%}
+                                    <li class="dropdown nav-item">
+                                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                            {{ my_page.title | escape }}
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            {%- for child in my_page.children -%}
+                                            {%- assign target = child.target | default: "_self" -%}
+                                            <a href="{{ child.url }}" class="dropdown-item {{ child.class }}" target="{{ target }}">
+                                                {{ child.title }}
+                                            </a>
+                                            {%- endfor -%}
+                                        </div>
+                                    </li>
+                                  {%- elsif my_page.title -%}
+                                    <li class="nav-item">
+                                      <a class="nav-link {{ my_page.class }}" href="{{ my_page.url | relative_url }}" target="{{ target }}">{{ my_page.title | escape }}</a>
+                                    </li>
+                                  {%- endif -%}
+                                {%- endfor -%}
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Signup btn -->
+            <div class="col-12 col-lg-2">
+                <div class="sing-up-button d-none d-lg-block">
+                    <a href="{{ site.data.event.url }}">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

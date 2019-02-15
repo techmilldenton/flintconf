@@ -1,0 +1,84 @@
+# Sponsor template that goes under appropriate tier
+# -name: Sponsor name
+#  img: img url
+#  url: Sponsor's site url
+#  social_links: Sponsor's respective social media links where names match FA icon classes. Max 5/sponsor
+
+# Smart City sponsors
+- name: Smart City
+  class: brand-success
+  items:
+    - name: City of Dallas
+      url: https://dallascityhall.com
+      img: "https://d3926qxcw0e1bh.cloudfront.net/pages_avatar_photos/97/55/9755a161e31a57d494e396d811a3d077.jpg.256x256.jpg"
+      social_links:
+        - name: facebook
+          url: https://www.facebook.com/DallasCityHall
+        - name: twitter
+          url: https://twitter.com/cityofdallas
+        - name: linkedin
+          url: https://www.linkedin.com/company/12685
+
+# City Planner sponsors
+- name: City Planner
+  class: brand-info
+  items:
+    - name: City of Denton
+      url: www.cityofdenton.com
+      img: /assets/img/sponsors/denton-logo.jpg
+    - name: City of Addison
+      url: https://addisontexas.net
+      img: /assets/img/sponsors/addison-logo.png
+
+# Civic Duties sponsors
+- name: Civic Duties
+  class: brand-warning
+  items:
+    - name: TechMill
+      url: https://techmill.co
+      img: /assets/img/sponsors/techmillco.jpeg
+      social_links:
+        - name: facebook
+          url: https://www.facebook.com/techmilldenton
+        - name: twitter
+          url: https://twitter.com/techmilldenton
+        - name: linkedin
+          url: https://www.linkedin.com/company/techmill-llc
+        - name: github
+          url: https://github.com/techmilldenton
+    - name: Rogue Metrics
+      url: https://www.roguemetrics.com
+      img: /assets/img/sponsors/roguemetrics.jpg
+      social_links:
+        - name: facebook
+          url: https://www.facebook.com/roguemetrics
+        - name: twitter
+          url: https://twitter.com/roguemetrics
+
+# Community sponsors
+- name: Community
+  class: brand-default
+  items:
+    - name: Open Denton
+      url: https://www.opendenton.com
+      img: /assets/img/sponsors/opendenton.jpg
+      social_links:
+        - name: facebook
+          url: https://facebook.com/opendenton
+        - name: twitter
+          url: https://twitter.com/opendenton
+        - name: github
+          url: https://github.com/opendenton
+    - name: Addison Tree House
+      url: https://www.opendenton.com
+      img: /assets/img/sponsors/addisontreehouse.jpg
+    - name: UNT ASIS&T
+      url: https://unt.asist.org/
+      img: /assets/img/sponsors/ntis2.png
+      social_links:
+        - name: facebook
+          url: https://www.facebook.com/UNTASIST/
+        - name: twitter
+          url: https://twitter.com/untasist
+        - name: paper-plane
+          url: mailto:untasist@gmail.com

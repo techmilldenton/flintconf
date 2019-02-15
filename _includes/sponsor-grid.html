@@ -1,0 +1,22 @@
+
+<div class="sponsors">
+  {%- for tier in site.data.sponsors -%}
+    {% if tier.items %}
+      <h3 class="tier tier__{{ tier.name | slugify }}">{{ tier.name }}</h3>
+      <div class="sponsor sponsor__{{ tier.name | slugify }}">
+        {%- for sponsor in tier.items -%}
+          {% include sponsor.html
+                     name=sponsor.name
+                     url=sponsor.url
+                     img=sponsor.img
+                     social_links=sponsor.social_links
+          %}
+        {%- endfor -%}
+      </div>
+    {% endif %}
+  {%- endfor -%}
+</div>
+
+<div class="text-center">
+  <a href="/sponsors" class="btn btn-success btn-lg btn-raised">Become a Sponsor</a>
+</div>

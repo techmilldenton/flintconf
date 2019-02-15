@@ -1,0 +1,95 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: FlintConf
+email: info@stokedenton.com
+description: >- # this means to ignore newlines until "baseurl:"
+  The Denton startup conference for hipsters, hackers, and hustlers
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://flint.stokedenton.com" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /blog/:year/:month/:day/:title
+
+# Social
+twitter_username: stokedenton
+facebook_username:  stokedenton
+instagram_username:  stokedenton
+rss: rss
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+# SASS
+sass:
+  sass_dir: ./_scss
+  # style: compressed
+
+# SEO / Social
+google_analytics: UA-51689839-9
+# google_tag_manager: GTM-KBPKJGR
+addthis:
+
+author: stokedenton
+twitter:
+  username: stokedenton
+  card: summary_large_image
+logo: /assets/img/odd-texas.png
+social:
+    name: Stoke
+    links:
+      - https://twitter.com/stokedenton
+      - https://www.facebook.com/stokedenton
+
+# Collections
+collections:
+  speakers:
+    output: false
+
+# Jekyll defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+      image:
+        path: assets/img/social/facebook-Linked_Image___odd-social.jpg
+        height: 640
+        width: 1280
+  - scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+      category: "Default"
+      body_class: blog-post
+      layout: "post"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

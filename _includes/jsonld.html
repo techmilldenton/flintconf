@@ -1,0 +1,25 @@
+<!-- Google Structured Data -->
+<script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "Event",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "startDate": "2019-03-02T18:30",
+  "endDate": "2019-03-02T20:00",
+  "location": {
+    "@type": "Place",
+    "name": "{{ site.data.event.venue.name }}",
+    "sameAs": "{{ site.data.event.venue.url }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.data.event.venue.address.street }}",
+      "addressLocality": "{{ site.data.event.venue.address.city }}",
+      "addressRegion": "{{ site.data.event.venue.address.state }}",
+      "postalCode": "{{ site.data.event.venue.address.zip }}",
+      "addressCountry": "USA"
+    }
+  }
+}
+ </script>
