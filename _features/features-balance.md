@@ -2,4 +2,4 @@
 title: Balance
 icon: list
 ---
-<balance>
+learn how to avoid burnout & strike a healthy work-life-... balance
