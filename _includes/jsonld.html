@@ -6,8 +6,8 @@
   "name": "{{ site.title }}",
   "url": "{{ site.url }}",
   "description": "{{ site.description }}",
-  "startDate": "2019-03-02T18:30",
-  "endDate": "2019-03-02T20:00",
+  "startDate": "{{ site.data.event.date | date_to_xmlschema }}",
+  "endDate": "{{ site.data.event.date | date_to_xmlschema }}",
   "location": {
     "@type": "Place",
     "name": "{{ site.data.event.venue.name }}",

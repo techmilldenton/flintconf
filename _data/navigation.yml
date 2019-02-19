@@ -16,10 +16,10 @@ toc:
     url: /sponsors
   - title: Contact
     url: /contact
-  - title: Register
-    url: https://www.eventbrite.com/e/dfw-open-data-day-tickets-54305774032
-    class: "btn btn-success register-link"
-    target: "_blank"
+  # - title: Register
+  #   url: https://www.eventbrite.com/e/dfw-open-data-day-tickets-54305774032
+  #   class: "btn btn-success register-link"
+  #   target: "_blank"
 footer:
   - title: Home
     url: /

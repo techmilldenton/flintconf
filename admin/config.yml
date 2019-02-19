@@ -1,16 +1,16 @@
 backend:
   name: github
-  repo: techmilldenton/dfwopendataday
+  repo: techmilldenton/flintconf
   branch: master # Branch to update (optional; defaults to master)
-  site_domain: dfwopendataday.com
+  site_domain: flint.stokedenton.com
 
 # This line should *not* be indented
 media_folder: "assets/img" # Media files will be stored in the repo under images/uploads
 
 collections:
-  - name: "people" # Used in routes, e.g., /admin/collections/blog
-    label: "People" # Used in the UI
-    folder: "_people" # The path to the folder where the documents are stored
+  - name: "speakers" # Used in routes, e.g., /admin/collections/blog
+    label: "Speaker" # Used in the UI
+    folder: "_speakers" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -19,11 +19,11 @@ collections:
       - {label: "Email", name: "email", widget: "string"}
       - {label: "Twitter", name: "twitter", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "faq" # Used in routes, e.g., /admin/collections/blog
-    label: "FAQ" # Used in the UI
-    folder: "_faq" # The path to the folder where the documents are stored
+  - name: "features" # Used in routes, e.g., /admin/collections/blog
+    label: "Feature" # Used in the UI
+    folder: "_features" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "faq-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "features-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     output: false
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}

@@ -1,7 +1,7 @@
 {
-  "name": "dfwopendataday",
+  "name": "flintconf",
   "version": "1.0.0",
-  "description": "Static site for DFW Open Data Day",
+  "description": "Static site for flintconf",
   "main": "gulpfile.js",
   "directories": {
     "example": "examples"
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/techmilldenton/dfwopendataday.git"
+    "url": "git+https://github.com/techmilldenton/flintconf.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/techmilldenton/dfwopendataday/issues"
+    "url": "https://github.com/techmilldenton/flintconf/issues"
   },
-  "homepage": "https://github.com/techmilldenton/dfwopendataday#readme",
+  "homepage": "https://github.com/techmilldenton/flintconf#readme",
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
