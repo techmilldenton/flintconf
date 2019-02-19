@@ -60,9 +60,11 @@ social:
 
 # Collections
 collections:
-  speakers:
+  speaker:
     output: false
   features:
+    output: false
+  sponsor:
     output: false
 
 # Jekyll defaults
