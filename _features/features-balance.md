@@ -1,5 +1,5 @@
 ---
-layout: page
 title: Balance
+icon: list
 ---
 <balance>
