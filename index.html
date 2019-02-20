@@ -315,8 +315,8 @@ layout: home
                                     {% if sponsor.instagram %}
                                     <a href="{{ sponsor.instagram }}"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     {% endif %}
-                                    {% if sponsor.website %}
-                                    <a href="{{ sponsor.website }}"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    {% if sponsor.url %}
+                                    <a href="{{ sponsor.url }}"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     {% endif %}
                                 </div>
                             </div>
@@ -349,20 +349,10 @@ layout: home
                 <div class="slides" data-slick="{ "slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 2000 }">
                     {% assign sponsors = site.sponsor | reverse %}
                     {% for sponsor in sponsors %}
-                        {% assign icon = feature.icon %}
-                        {% unless icon %}{% assign icon = "pulse" %}{% endunless %}
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="single-feature">
-                                <i class="ti-{{ icon }}" aria-hidden="true"></i>
-                                <h5>{{ feature.title }}</h5>
-                                <p>{{ feature.content }}</p>
-                            </div>
-                        </div>
-                    {% endfor %}
-                    <div class="sponsor">
-                        <img src="/assets/img/sponsor" alt="">
+                        <div class="sponsor">
+                        <img src="/assets/img/{{ sponsor.image }}" alt="">
                     </div>
-
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -125,7 +125,7 @@
 
     var $window = $(window);
 
-    if ($window.width() > 767) {
+    if ($window.width() > 767 && typeof WOW == 'function') {
         new WOW().init();
     }
 
