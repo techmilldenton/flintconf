@@ -1,19 +1,10 @@
 toc:
-  - title: About
-    url: "#"
-    children:
-      - title: Resources
-        url: /resources
-      - title: Code of Conduct
-        url: /conduct
-      - title: About TechMill
-        url: /about-techmill
-      - title: Schedule
-        url: /schedule
-  - title: Challenges
-    url: /challenges
-  - title: Sponsors
-    url: /sponsors
+  - title: Who
+    url: "#who"
+  - title: What & Why
+    url: "#what"
+  - title: When & Where
+    url: "#when"
   - title: Contact
     url: /contact
   # - title: Register
@@ -23,5 +14,3 @@ toc:
 footer:
   - title: Home
     url: /
-  - title: FAQ
-    url: /faq

@@ -19,15 +19,19 @@ collections:
       - {label: "Email", name: "email", widget: "string"}
       - {label: "Twitter", name: "twitter", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "sponsor" # Used in routes, e.g., /admin/collections/blog
+  - name: "sponsors" # Used in routes, e.g., /admin/collections/blog
     label: "Sponsor" # Used in the UI
-    folder: "_sponsor" # The path to the folder where the documents are stored
+    folder: "_sponsors" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "URL", name: "url", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
+      - {label: "URL", name: "url", widget: "string"}
+      - {label: "Facebook", name: "facebook", widget: "string", default: "https://wwww.facebook.com/stokedenton"}
+      - {label: "Twitter", name: "twitter", widget: "string", default: "https://twitter.com/stokedenton"}
+      - {label: "Instagram", name: "facebook", widget: "string", default: "https://wwww.instagram.com/stokedenton"}
   - name: "features" # Used in routes, e.g., /admin/collections/blog
     label: "Feature" # Used in the UI
     folder: "_features" # The path to the folder where the documents are stored
