@@ -5,6 +5,6 @@ image: /assets/img/techmill-member-sq.jpg
 url: 'https://techmill.co'
 facebook: 'https://wwww.instagram.com/techmilldenton'
 twitter: 'https://twitter.com/techmilldenton'
-order: 2
+order_sort: 2
 ---
 

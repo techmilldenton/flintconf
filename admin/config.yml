@@ -34,7 +34,7 @@ collections:
       - {label: "Facebook", name: "facebook", widget: "string", default: "https://wwww.facebook.com/stokedenton"}
       - {label: "Twitter", name: "twitter", widget: "string", default: "https://twitter.com/stokedenton"}
       - {label: "Instagram", name: "facebook", widget: "string", default: "https://wwww.instagram.com/stokedenton"}
-      - {label: "Order", name: "order", widget: "number", default: 10, valueType: "int", min: 1, max: 100}
+      - {label: "Order", name: "order_sort", widget: "number", default: 10, valueType: "int", min: 1, max: 100}
   - name: "features" # Used in routes, e.g., /admin/collections/blog
     label: "Feature" # Used in the UI
     folder: "_features" # The path to the folder where the documents are stored
