@@ -39,11 +39,13 @@ $indigo:  #3050B1 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
+$orange:  #f9a828 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #37E091 !default;
 $cyan:    #17a2b8 !default;
+$limed-spruce: #2e383f !default;
+$teal-blue: #07617d !default;
 
 $colors: () !default;
 $colors: map-merge((
@@ -59,7 +61,9 @@ $colors: map-merge((
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  "limed-spruce": $limed-spruce,
+  "teal-blue": $teal-blue
 ), $colors);
 
 $primary:       $teal !default;

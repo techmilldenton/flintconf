@@ -286,7 +286,7 @@ layout: home
 
 
     <!-- ***** Our Team Area Start ***** -->
-    <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
+    <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="sponsors">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -298,7 +298,7 @@ layout: home
                 </div>
             </div>
             <div class="row">
-                {% assign sponsors = site.sponsor | reverse %}
+                {% assign sponsors = site.sponsor | sort:"order" %}
                 {% for sponsor in site.sponsors %}
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="single-team-member">
