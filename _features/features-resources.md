@@ -2,4 +2,4 @@
 title: Resources
 icon: write
 ---
-understand what programs, organizations, and tools are available to you to help you be successful
+discover programs, organizations, and tools available to you to help you succeed
