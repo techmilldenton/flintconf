@@ -66,9 +66,9 @@ $colors: map-merge((
   "teal-blue": $teal-blue
 ), $colors);
 
-$primary:       $teal !default;
+$primary:       $teal-blue !default;
 $secondary:     $gray-600 !default;
-$accent:        $indigo !default;
+$accent:        $limed-spruce !default;
 $success:       $teal !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
