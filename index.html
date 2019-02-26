@@ -19,7 +19,7 @@ layout: home
                     </div>
                     <div class="get-start-area">
                         <!-- <p>Wherever you are in your entrepreneurial pursuits, FlintConf will take you further.</p> -->
-                        <p><a href=" https://www.eventbrite.com/e/flintconf-tickets-56598760416" title="Register now" class="btn btn-warning btn-lg">Register now</a></p>
+                        <p><a href="{{ site.data.event.url }}" title="Register now" class="btn btn-warning btn-lg" target="_blank">Register now</a></p>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@ layout: home
                             <div class="app-download-area">
                                 <div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
                                     <!-- Google Store Btn -->
-                                    <a href="https://www.eventbrite.com/e/flintconf-tickets-56598760416">
+                                    <a href="{{ site.data.event.url }}" target="_blank">
                                         <i class="fa fa-calendar"></i>
                                         <p class="mb-0"><span>you can</span> Register Now</p>
                                     </a>
@@ -307,16 +307,16 @@ layout: home
                             <div class="team-hover-effects">
                                 <div class="team-social-icon">
                                     {% if sponsor.facebook %}
-                                    <a href="{{ sponsor.facebook }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="{{ sponsor.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     {% endif %}
                                     {% if sponsor.twitter %}
-                                    <a href="{{ sponsor.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="{{ sponsor.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     {% endif %}
                                     {% if sponsor.instagram %}
-                                    <a href="{{ sponsor.instagram }}"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="{{ sponsor.instagram }}" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     {% endif %}
                                     {% if sponsor.url %}
-                                    <a href="{{ sponsor.url }}"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    <a href="{{ sponsor.url }}" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     {% endif %}
                                 </div>
                             </div>
