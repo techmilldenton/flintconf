@@ -300,6 +300,7 @@ layout: home
             <div class="row">
                 {% assign sponsors = site.sponsors | sort:"order_sort" %}
                 {% for sponsor in sponsors %}
+                <pre>{{ sponsor | inspect }}</pre>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="single-team-member">
                         <div class="member-image">
@@ -315,8 +316,8 @@ layout: home
                                     {% if sponsor.instagram %}
                                     <a href="{{ sponsor.instagram }}" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     {% endif %}
-                                    {% if sponsor.url %}
-                                    <a href="{{ sponsor.url }}" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    {% if sponsor.website %}
+                                    <a href="{{ sponsor.website }}" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
                                     {% endif %}
                                 </div>
                             </div>

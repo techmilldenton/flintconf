@@ -4,8 +4,8 @@ subtitle: >-
   Department offering support & services to businesses in all sectors and of all
   sizes
 image: /assets/img/city-of-denton-square-logo.png
-url: 'https://www.cityofdenton.com/en-us/business/economic-development'
-facebook: 'https://www.instagram.com/cityofdenton/'
+website: 'https://www.cityofdenton.com/en-us/business/economic-development'
+instagram: 'https://www.instagram.com/cityofdenton/'
 twitter: 'https://twitter.com/cityofdentontx'
 order_sort: 4
 ---
