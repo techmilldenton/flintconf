@@ -1118,7 +1118,7 @@ p {
 }
 
 .address-text > p > span, .phone-text > p > span, .email-text > p > span {
-  color: #5b32b4;
+  color: $teal-blue;
 }
 
 .footer-contact-area {
@@ -1163,7 +1163,9 @@ p {
   background: #f5f9fc;
 }
 
-.footer-text > {
+.footer-text {
+  margin-bottom: 30px;
+  & > {
   p {
     margin-bottom: 50px;
   }
@@ -1172,6 +1174,7 @@ p {
     font-size: 72px;
     font-weight: 700;
   }
+}
 }
 
 /* --------------------------
@@ -1199,10 +1202,6 @@ p {
 
 .social-icon {
   margin-bottom: 30px;
-}
-
-.footer-text {
-  margin-bottom: 15px;
 }
 
 .footer-menu ul li {
