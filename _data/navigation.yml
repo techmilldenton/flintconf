@@ -6,7 +6,7 @@ toc:
   - title: When & Where
     url: "#when"
   - title: Contact
-    url: /contact
+    url: "#contact"
   # - title: Register
   #   url: https://www.eventbrite.com/e/dfw-open-data-day-tickets-54305774032
   #   class: "btn btn-success register-link"
