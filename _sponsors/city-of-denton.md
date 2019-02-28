@@ -5,8 +5,9 @@ subtitle: >-
   sizes
 image: /assets/img/city-of-denton-square-logo.png
 website: 'https://www.cityofdenton.com/en-us/business/economic-development'
-instagram: 'https://www.instagram.com/cityofdenton/'
+facebook: 'https://www.facebook.com/CityofDenton'
 twitter: 'https://twitter.com/cityofdentontx'
+instagram: 'https://www.instagram.com/cityofdenton/'
 order_sort: 4
 ---
 
