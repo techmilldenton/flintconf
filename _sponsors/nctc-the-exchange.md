@@ -8,6 +8,6 @@ website: 'https://www.nctc.edu/fsbexchange/index.html'
 facebook: 'https://www.facebook.com/NorthCentralTexasCollege/'
 twitter: 'https://twitter.com/nctclions'
 instagram: 'https://www.instagram.com/nctclions/'
-order_sort: 10
+order_sort: 6
 ---
 
