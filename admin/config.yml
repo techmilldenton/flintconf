@@ -32,6 +32,19 @@ collections:
       - {label: "Time", name: "time", widget: "datetime", format: "x"}
       - {label: "Breakout", name: "breakout", widget: "boolean"}
       - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Category", name: "category", widget: "string"}
+      - label: "Color"
+        name: "color"
+        widget: "select"
+        options:
+          - { label: "Primary (purple?)", value: "primary" }
+          - { label: "Secondary (gray?)", value: "secondary" }
+          - { label: "Green", value: "success" }
+          - { label: "Orange", value: "warning" }
+          - { label: "Red", value: "danger" }
+          - { label: "Blue", value: "info" }
+          - { label: "White", value: "light" }
+          - { label: "Black", value: "dark" }
       - {label: "Speaker", name: "speaker", widget: "relation", collection: "speakers", searchFields: ["name", "twitter"], valueField: "name", displayFields: ["name"]}
   - name: "sponsors" # Used in routes, e.g., /admin/collections/blog
     label: "Sponsor" # Used in the UI
