@@ -21,7 +21,7 @@ collections:
       - {label: "Company", name: "company_name", widget: "string"}
       - {label: "Twitter", name: "twitter", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Description", name: "body", widget: "markdown", required: "false"}
+      - {label: "Description", name: "body", widget: "markdown", required: false}
   - name: "topics" # Used in routes, e.g., /admin/collections/blog
     label: "Topics" # Used in the UI
     folder: "_topics" # The path to the folder where the documents are stored
@@ -31,12 +31,12 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Time", name: "time", widget: "datetime", format: "x"}
-      - {label: "Breakout", name: "breakout", widget: "boolean", required: "false"}
+      - {label: "Breakout", name: "breakout", widget: "boolean", required: false}
       - {label: "Category", name: "category", widget: "string"}
       - label: "Color"
         name: "color"
         widget: "select"
-        required: "false"
+        required: false
         options:
           - { label: "Primary (purple?)", value: "primary" }
           - { label: "Secondary (gray?)", value: "secondary" }
@@ -46,7 +46,7 @@ collections:
           - { label: "Blue", value: "info" }
           - { label: "White", value: "light" }
           - { label: "Black", value: "dark" }
-      - {label: "Speaker", name: "speaker", widget: "relation", collection: "speakers", searchFields: ["name", "twitter"], valueField: "name", displayFields: ["name"], required: "false"}
+      - {label: "Speaker", name: "speaker", widget: "relation", collection: "speakers", searchFields: ["name", "twitter"], valueField: "name", displayFields: ["name"], required: false}
   - name: "sponsors" # Used in routes, e.g., /admin/collections/blog
     label: "Sponsor" # Used in the UI
     folder: "_sponsors" # The path to the folder where the documents are stored
@@ -58,9 +58,9 @@ collections:
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Website", name: "website", widget: "string"}
-      - {label: "Facebook", name: "facebook", widget: "string", default: "https://wwww.facebook.com/stokedenton", required: "false"}
-      - {label: "Twitter", name: "twitter", widget: "string", default: "https://twitter.com/stokedenton", required: "false"}
-      - {label: "Instagram", name: "instagram", widget: "string", default: "https://wwww.instagram.com/stokedenton", required: "false"}
+      - {label: "Facebook", name: "facebook", widget: "string", default: "https://wwww.facebook.com/stokedenton", required: false}
+      - {label: "Twitter", name: "twitter", widget: "string", default: "https://twitter.com/stokedenton", required: false}
+      - {label: "Instagram", name: "instagram", widget: "string", default: "https://wwww.instagram.com/stokedenton", required: false}
       - {label: "Order", name: "order_sort", widget: "number", default: 10, valueType: "int", min: 1, max: 100}
   - name: "features" # Used in routes, e.g., /admin/collections/blog
     label: "Feature" # Used in the UI
