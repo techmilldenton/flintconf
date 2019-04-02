@@ -46,7 +46,7 @@ collections:
           - { label: "Blue", value: "info" }
           - { label: "White", value: "light" }
           - { label: "Black", value: "dark" }
-      - {label: "Speaker", name: "speaker", widget: "relation", collection: "speakers", searchFields: ["name", "twitter"], valueField: "name", displayFields: ["name"]}
+      - {label: "Speaker", name: "speaker", widget: "relation", collection: "speakers", searchFields: ["name", "twitter"], valueField: "name", displayFields: ["name"], required: "false"}
   - name: "sponsors" # Used in routes, e.g., /admin/collections/blog
     label: "Sponsor" # Used in the UI
     folder: "_sponsors" # The path to the folder where the documents are stored
