@@ -202,10 +202,10 @@ layout: home
                         </tr>
                       </thead>
                       <tbody>
-                        {% assign topics = site.topics | sort: "time" %}
+                        {% assign topics = site.topics | sort: "order" %}
                         {% for topic in topics %}
                         <tr>
-                            <td>{{ topic.time | minus: 18000000 | date: "%l:%M %P" }}</td><td>{{ topic.title }}</td><td>{{ topic.speaker }}</td>
+                            <td>{{ topic.time }}</td><td>{{ topic.title }}</td><td>{{ topic.speaker }}</td>
                         </tr>
                         {% endfor %}
                       </tbody>

@@ -4,5 +4,6 @@ time: 8:30 am
 breakout: false
 category: entrepreneurship
 speaker: Heather Gregory
+order: 1
 ---
 
