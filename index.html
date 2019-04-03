@@ -42,6 +42,7 @@ layout: home
                     <p><strong>Wherever you are in your entrepreneurial pursuits, FlintConf will take you further.</strong></p>
                 </div>
             </div>
+        </div>
     </section>
 
 
@@ -134,9 +135,88 @@ layout: home
         </div>
     </section>
     <!-- ***** Special Area End ***** -->
+    <!-- ***** Speakers starts ***** -->
+    <section class="bg-white section_padding_50 clearfix" id="speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text  -->
+                    <div class="section-heading text-center">
+                        <h2>Speakers</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row">
+                {% assign speakers = site.speakers | sort:"name" %}
+                {% for speaker in speakers %}
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="single-team-member">
+                        <div class="member-image">
+                            <img src="{{ speaker.image }}" alt="{{ speaker.name }}" style="object-fit: cover;" width="300" height="300">
+                            <div class="team-hover-effects">
+                                <div class="team-social-icon">
+                                    {% if speaker.twitter %}
+                                    <a href="{{ speaker.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    {% endif %}
+                                    {% if speaker.website %}
+                                    <a href="{{ speaker.website }}" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-text">
+                            <h4>{{ speaker.name }}</h4>
+                            <p>
+                                {{ speaker.company_title }}<br>
+                                <small>{{ speaker.company_name }}</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- ***** Speakers ends ***** -->
+    <!-- ***** Schedule starts ***** -->
+    <section class="pricing-plane-area section_padding_100_70 clearfix" id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text  -->
+                    <div class="section-heading text-center">
+                        <h2>Conference Schedule</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-12 col-md-10 offset-md-1">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Time</th><<th>Topic</th><th>Speaker</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% assign topics = site.topics | sort: "time" %}
+                        {% for topic in topics %}
+                        <tr>
+                            <td>{{ topic.time | minus: 18000000 | date: "%l:%M %P" }}</td><td>{{ topic.title }}</td><td>{{ topic.speaker }}</td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Schedule ends ***** -->
     <!-- ***** Awesome Features Start ***** -->
-    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
+    <section class="awesome-feature-area bg-white section_padding_50 clearfix" id="features">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -422,4 +502,3 @@ layout: home
         </div>
     </section>
     <!-- ***** Contact Us Area End ***** -->
-
