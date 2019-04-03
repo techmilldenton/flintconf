@@ -1,6 +1,6 @@
 ---
 title: Lean Principles
-time: '1555088400000'
+time: 12:00 pm
 breakout: false
 category: bootstrapping
 speaker: Kyle Taylor

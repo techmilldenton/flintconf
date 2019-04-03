@@ -1,6 +1,6 @@
 ---
 title: 'Outburn Burnout: Creating Balance While Overcoming Chronic Stress'
-time: '1555081200000'
+time: 10:00 am
 breakout: false
 category: 'resiliency, wellness'
 speaker: Pilar Angel

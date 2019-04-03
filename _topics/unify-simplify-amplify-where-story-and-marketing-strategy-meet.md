@@ -1,6 +1,6 @@
 ---
 title: 'Unify + Simplify + Amplify: Where Story and Marketing Strategy Meet'
-time: '1555084800000'
+time: 11:00 am
 breakout: false
 category: marketing
 speaker: Josh Berthume

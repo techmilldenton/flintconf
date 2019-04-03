@@ -1,6 +1,6 @@
 ---
 title: The Entrepreneurial Mindset
-time: '1555101600000'
+time: 3:40 pm
 breakout: false
 category: 'entrepreneurship, education, innovation'
 speaker: Emily Roden

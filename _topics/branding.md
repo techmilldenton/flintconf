@@ -1,6 +1,6 @@
 ---
 title: Building Your Business Battlecry -- A Powerful Brand Story That Actually Works
-time: '1555077600000'
+time: 9:00 am
 breakout: false
 category: branding
 speaker: Heather Steele
