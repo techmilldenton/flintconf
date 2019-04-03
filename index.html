@@ -204,11 +204,16 @@ layout: home
                       <tbody>
                         {% assign topics = site.topics | sort: "order" %}
                         {% for topic in topics %}
+                        {% assign breakout = "" %}
+                        {% if topic.breakout == true %}
+                            {% assign breakout = "*" %}
+                        {% endif %}
                         <tr>
-                            <td>{{ topic.time }}</td><td>{{ topic.title }}</td><td>{{ topic.speaker }}</td>
+                            <td>{{ topic.time }}</td><td>{{ topic.title }}{{ breakout }}</td><td>{{ topic.speaker }}</td>
                         </tr>
                         {% endfor %}
                       </tbody>
+                      <p><small>* Breakout session</small></p>
                     </table>
                 </div>
             </div>
