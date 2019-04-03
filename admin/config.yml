@@ -19,7 +19,7 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Title", name: "company_title", widget: "string"}
       - {label: "Company", name: "company_name", widget: "string"}
-      - {label: "Twitter", name: "twitter", widget: "string"}
+      - {label: "Twitter", name: "twitter", widget: "string", required: false }
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "body", widget: "markdown", required: false}
   - name: "topics" # Used in routes, e.g., /admin/collections/blog
@@ -30,7 +30,7 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Time", name: "time", widget: "datetime", format: "x"}
+      - {label: "Time", name: "time", widget: "datetime", format: "LT"}
       - {label: "Breakout", name: "breakout", widget: "boolean", required: false}
       - {label: "Category", name: "category", widget: "string"}
       - label: "Color"
