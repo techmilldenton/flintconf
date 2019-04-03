@@ -4,7 +4,7 @@ name: Josh Berthume
 company_title: President / CEO
 company_name: Swash Labs
 email: josh@swashlabs.com
-twitter: jberthume
+twitter: https://twitter.com/jberthume
 image: /assets/img/josh2017a.jpg
 ---
 Over the years, Josh has been known for his uncanny ability to bring together creative misfits and inspire them to greatness. Swash Labs may not be the first instance of this phenomenon, but he does consider the business to be his greatest personal achievement. The biggest kick he gets out of being the CEO and President of his own Advertising Oasis is giving other motivated individuals the opportunity to thrive in a workplace they enjoy while making work they are proud of. THE ONLY REAL MISTAKE YOU CAN MAKE IS NOT TO START.
