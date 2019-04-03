@@ -60,7 +60,7 @@ social:
 
 # Collections
 collections:
-  speaker:
+  speakers:
     output: false
   topics:
     output: false
