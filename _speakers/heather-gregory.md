@@ -3,7 +3,7 @@ layout: page
 name: Heather Gregory
 company_title: Director
 company_name: Stoke
-twitter: heathergregory
+twitter: 'https://twitter.com/StokeDenton'
 image: /assets/img/heather-gregory.jpg
 ---
 Heather Gregory is a community organizer and entrepreneur with a background in nonprofit management, small business operations, marketing, event planning, program development, and design. Heather has served as the Director of Stoke since January 2017. Prior to that she was the Director of SCRAP Denton, a Project Manager at a full-service marketing agency, and the creator and owner of a food cart in Portland, Oregon.
