@@ -1,6 +1,6 @@
 ---
 layout: page
-name: GiGi McDowelle
+name: GiGi McDowell
 company_title: Founder and Ceo
 company_name: 'Fêtefully '
 twitter: GiGi_McDowell
