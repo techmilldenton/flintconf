@@ -87,3 +87,22 @@ collections:
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "carousel"
+    label: "Carousels"
+    folder: "_carousel"
+    identifier_field: name
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - label: "Title"
+        name: "name"
+        widget: "string"
+        hint: "Any descriptive title will work here."
+      - label: Alternative text
+        name: "alt"
+        widget: "string"
+        hint: "Alt tag text"
+        required: false
+      - label: "Image source"
+        name: "src"
+        widget: "image"  

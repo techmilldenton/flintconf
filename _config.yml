@@ -68,6 +68,8 @@ collections:
     output: false
   sponsors:
     output: false
+  carousel:
+    output: false
 
 # Jekyll defaults
 defaults:
