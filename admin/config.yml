@@ -98,10 +98,10 @@ collections:
         name: "name"
         widget: "string"
         hint: "Any descriptive title will work here."
-      - label: Alternative text
+      - label: Alternative text / Caption
         name: "alt"
         widget: "string"
-        hint: "Alt tag text"
+        hint: "Alt tag text that's also used as an image caption"
         required: false
       - label: "Image source"
         name: "src"
