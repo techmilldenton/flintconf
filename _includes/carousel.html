@@ -10,9 +10,11 @@
           {% capture active %}{% if forloop.first == true %}active {% endif %}{% endcapture %}
           <div class="carousel-item {{ active }}">
               <img src="{{ slide.src }}" class="d-block w-100" alt="{{ slide.alt }}">
+              {% if slide.alt != '' %}
               <div class="carousel-caption d-none d-md-block">
                   <h5 style="color:white;">{{ slide.alt }}</h5>
               </div>
+              {% endif %}
           </div>
 
       {% endfor %}
