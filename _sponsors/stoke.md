@@ -1,6 +1,8 @@
 ---
 title: Stoke
-subtitle: Entrepreneur Center
+subtitle: >-
+  Coworking & meeting space focused on cultivating community and empowering
+  entrepreneurs
 image: /assets/img/stoke-coworking-square-logo-2.png
 website: 'https://stokedenton.com'
 facebook: 'https://www.facebook.com/stokedenton/'
