@@ -1,7 +1,7 @@
 ---
 layout: page
 name: Emile Stewart
-company_title: Founder and Owner
+company_title: Founder and CEO
 company_name: 'Wildflower Art Studio '
 image: /assets/img/wildflower-art-studio-may-2018-12-of-13-.jpg
 ---
