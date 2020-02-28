@@ -24,11 +24,10 @@ collections:
       - {label: "Description", name: "body", widget: "markdown", required: false}
       - label: "Year"
         name: "year"
-        widget: "select"
-        required: true
-        options:
-          - 2019
-          - 2020
+        widget: "list"
+        default: ["2019"]
+        required: false
+        options: ["2019", "2020"]
   - name: "topics" # Used in routes, e.g., /admin/collections/blog
     label: "Topics" # Used in the UI
     folder: "_topics" # The path to the folder where the documents are stored
