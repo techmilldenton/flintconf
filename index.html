@@ -135,39 +135,21 @@ layout: home
         </div>
     </section>
     <!-- ***** Special Area End ***** -->
-    <!-- ***** Speakers starts ***** -->
+    <!-- Current speakers -->
     <section class="bg-white section_padding_50 clearfix" id="speakers">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <!-- Heading Text  -->
                     <div class="section-heading text-center">
-                        <h2>2020 Speakers</h2>
+                        <h2>Speakers</h2>
                         <div class="line-shape"></div>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <h3 class="text-center" style="width: 100%">Coming soon!</h3>
-            </div>
-        </div>
-    </section>
-    <!-- 2019 speakers -->
-    <section class="bg-white section_padding_50 clearfix" id="speakers">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Heading Text  -->
-                    <div class="section-heading text-center">
-                        <h2>2019 Speakers</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                {% assign speakers = site.speakers | sort:"name" %}
+                {% assign speakers = site.speakers | where: 'year', site.year | sort:"name" %}
                 {% for speaker in speakers %}
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="single-team-member">
