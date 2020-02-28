@@ -195,7 +195,7 @@ layout: home
                 <div class="col-md-10 offset-md-1">
                     {% assign topics = site.topics | where: 'year', site.year | sort: "order" %}
                     {% assign topic_size = topics | size %}
-                    {% if topic_size != nil %}
+                    {% if topic_size >= 1 %}
                     <table class="table table-striped">
                       <thead>
                         <tr>
