@@ -191,31 +191,33 @@ layout: home
                         <div class="line-shape"></div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row no-gutters">
-                <div class="col-12 col-md-10 offset-md-1">
-                    <!-- <table class="table table-striped">
+            
+                <div class="col-md-10 offset-md-1">
+                    {% assign topics = site.topics | where: 'year', site.year | sort: "order" %}
+                    {% assign topic_size = topics | size %}
+                    {% if topic_size != nil %}
+                    <table class="table table-striped">
                       <thead>
                         <tr>
                           <th>Time</th><th>Topic</th><th>Speaker</th>
                         </tr>
                       </thead>
                       <tbody>
-                        {% assign topics = site.topics | sort: "order" %}
                         {% for topic in topics %}
-                        {% assign breakout = "" %}
-                        {% if topic.breakout == true %}
-                            {% assign breakout = "*" %}
-                        {% endif %}
-                        <tr>
-                            <td>{{ topic.time }}</td><td>{{ topic.title }}{{ breakout }}</td><td>{{ topic.speaker }}</td>
-                        </tr>
+                            {% assign breakout = "" %}
+                            {% if topic.breakout == true %}
+                                {% assign breakout = "*" %}
+                            {% endif %}
+                            <tr>
+                                <td>{{ topic.time }}</td><td>{{ topic.title }}{{ breakout }}</td><td>{{ topic.speaker }}</td>
+                            </tr>
                         {% endfor %}
                       </tbody>
                       <p><small>* Breakout session</small></p>
-                    </table> -->
-                    <h3>Coming soon!</h3>
+                    </table>
+                    {% else %}
+                        <h3 class="text-center">Coming soon!</h3>
+                    {% endif %}
                 </div>
             </div>
         </div>
