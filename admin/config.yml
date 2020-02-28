@@ -24,7 +24,7 @@ collections:
       - {label: "Description", name: "body", widget: "markdown", required: false}
       - label: "Year"
         name: "year"
-        widget: "list"
+        widget: "select"
         default: ["2019"]
         required: false
         options: ["2019", "2020"]
