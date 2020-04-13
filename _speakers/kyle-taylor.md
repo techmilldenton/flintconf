@@ -1,8 +1,8 @@
 ---
 layout: page
 name: Kyle Taylor
-company_title: President and Cofounder
-company_name: TechMill
+company_title: Sales Engineer
+company_name: Pantheon.io
 twitter: https://twitter.com/kyletaylored
 image: /assets/img/kyle-taylor-headshot.jpg
 email: kyletaylor
