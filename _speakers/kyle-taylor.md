@@ -1,11 +1,12 @@
 ---
 layout: page
 name: Kyle Taylor
-company_title: President and Cofounder
-company_name: TechMill
-email: kyletaylor
-twitter: 'https://twitter.com/kyletaylored'
+company_title: Sales Engineer
+company_name: Pantheon.io
+twitter: https://twitter.com/kyletaylored
 image: /assets/img/kyle-taylor-headshot.jpg
+email: kyletaylor
+year: "2020"
 ---
 After majoring in Information Technology (network security concentration), Taylor found his passion building on websites while working on a senior project in college. Taylor is currently a Drupal developer based in North Texas.
 
