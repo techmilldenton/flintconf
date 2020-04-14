@@ -2,7 +2,7 @@
 title: TWU Center for Women Entrepreneurs
 subtitle: Assisting current or prospective business owners in Texas with
   education, support services, and research
-image: /assets/img/center-for-women-entrepreneurs-signature-for-sig-2-.jpg
+image: /assets/img/twu-cwe.png
 website: https://twu.edu/center-women-entrepreneurs/
 facebook: https://www.facebook.com/TWUCWE/
 twitter: https://twitter.com/twucwe
