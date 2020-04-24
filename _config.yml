@@ -71,6 +71,8 @@ collections:
     output: false
   carousel:
     output: false
+  categories:
+    output: false
 
 # Jekyll defaults
 defaults:
