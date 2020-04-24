@@ -191,34 +191,35 @@ layout: home
                         <div class="line-shape"></div>
                     </div>
                 </div>
-            
-                <div class="col-md-10 offset-md-1">
-                    {% assign topics = site.topics | where: 'year', site.year | sort: "order" %}
-                    {% assign topic_size = topics | size %}
-                    {% if topic_size >= 1 %}
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>Time</th><th>Topic</th><th>Speaker</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {% for topic in topics %}
-                            {% assign breakout = "" %}
-                            {% if topic.breakout == true %}
-                                {% assign breakout = "*" %}
-                            {% endif %}
-                            <tr>
-                                <td>{{ topic.time }}</td><td>{{ topic.title }}{{ breakout }}</td><td>{{ topic.speaker }}</td>
-                            </tr>
+            </div>
+            <div class="row">
+                    
+                    {% assign cats = site.topics | where: 'year', site.year | sort: "order" | group_by: 'category' %}
+                    {% assign topic_size = cats | size %}
+                    {% if topic_size > 0 %}
+                        {% for cat in cats %}
+                        <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                <h4 style="margin: 0;">{{ cat.name }}</h4>
+                            </div>
+                            <div class="list-group list-group-flush">                        
+                            {% for item in cat.items %}
+                                <div class="list-group-item flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between mb-1">
+                                      <small>{{ item.time }}</small>
+                                    </div>
+                                    <p class="mb-1"><strong>{{ item.title }}</strong></p>
+                                    <small>{{ item.speaker }}</small>
+                                </div>
+                            {% endfor %}
+                            </div>
+                    </div>
+                    </div>
                         {% endfor %}
-                      </tbody>
-                      <p><small>* Breakout session</small></p>
-                    </table>
                     {% else %}
                         <h3 class="text-center">Coming soon!</h3>
                     {% endif %}
-                </div>
             </div>
         </div>
     </section>
