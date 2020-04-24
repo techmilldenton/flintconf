@@ -199,27 +199,30 @@ layout: home
                         {% assign cats = site.topic_categories | sort: "date" %}
                         <!-- {{ cats | inspect }} -->
                         {% for cat in cats %}
-                        
-                        <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
-                                <h4 class="text-{{ cat.color }}" style="margin: 0; width: 40%; float: left;">{{ cat.title }} </h4>
-                                <strong style="display: block; float: left; width: 60%; text-align: right;">{{ cat.date | date: "%m/%d/%Y" }}</strong>
-                            </div>
-                            <div class="list-group list-group-flush">
-                                {% assign topics =  site.topics | where: 'year', site.year | where: 'category', cat.title | sort: "order" %}
-                                {% for topic in topics %}
-                                <div class="list-group-item flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between mb-1">
-                                      <small>{{ topic.time }}</small>
+                            {% assign altcolor = "dark" %}
+                            {% unless cat.color == "success" or  cat.color == "warning" %}
+                                {% assign altcolor = "light" %}
+                            {% endunless %}
+                            <div class="col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-header bg-{{ cat.color }} text-{{ altcolor }}">
+                                        <h4 class="text-{{ altcolor }}" style="margin: 0; width: 40%; float: left;">{{ cat.title }} </h4>
+                                        <div style="display: block; float: left; width: 60%; text-align: right;">{{ cat.date | date: "%a, %B %-d" }}</div>
                                     </div>
-                                    <p class="mb-1"><strong>{{ topic.title }}</strong></p>
-                                    <small>{{ topic.speaker }}</small>
+                                    <div class="list-group list-group-flush">
+                                        {% assign topics =  site.topics | where: 'year', site.year | where: 'category', cat.title | sort: "order" %}
+                                        {% for topic in topics %}
+                                        <div class="list-group-item flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between mb-1">
+                                            <small>{{ topic.time }}</small>
+                                            </div>
+                                            <p class="mb-1"><strong>{{ topic.title }}</strong></p>
+                                            <small>{{ topic.speaker }}</small>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
                                 </div>
-                                {% endfor %}
                             </div>
-                        </div>
-                    </div>
                         {% endfor %}
                     {% else %}
                         <h3 class="text-center">Coming soon!</h3>
