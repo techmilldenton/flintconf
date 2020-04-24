@@ -38,7 +38,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Time", name: "time", widget: "string"}
       - {label: "Breakout", name: "breakout", widget: "boolean", required: false}
-      - {label: "Category", name: "category", widget: "relation", collection: "categories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
+      - {label: "Category", name: "category", widget: "relation", collection: "topic_categories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
       - {label: "Order", name: "order", widget: "number", default: 10, valueType: "int", min: 1, max: 100}
       - label: "Year"
         name: "year"
@@ -99,9 +99,9 @@ collections:
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-  - name: "categories"
-    label: "Category"
-    folder: "_categories"
+  - name: "topic_categories"
+    label: "Topic Category"
+    folder: "_topic_categories"
     sort: "title:asc"
     create: true
     slug: "{{slug}}"

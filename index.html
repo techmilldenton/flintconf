@@ -194,27 +194,31 @@ layout: home
             </div>
             <div class="row">
                     
-                    {% assign cats = site.topics | where: 'year', site.year | sort: "order" | group_by: 'category' %}
-                    {% assign topic_size = cats | size %}
+                    {% assign topic_size = site.topics | where: 'year', site.year | size %}
                     {% if topic_size > 0 %}
+                        {% assign cats = site.topic_categories | sort: "date" %}
+                        <!-- {{ cats | inspect }} -->
                         {% for cat in cats %}
+                        
                         <div class="col-md-4">
                         <div class="card" style="width: 18rem;">
                             <div class="card-header">
-                                <h4 style="margin: 0;">{{ cat.name }}</h4>
+                                <h4 class="text-{{ cat.color }}" style="margin: 0; width: 40%; float: left;">{{ cat.title }} </h4>
+                                <strong style="display: block; float: left; width: 60%; text-align: right;">{{ cat.date | date: "%m/%d/%Y" }}</strong>
                             </div>
-                            <div class="list-group list-group-flush">                        
-                            {% for item in cat.items %}
+                            <div class="list-group list-group-flush">
+                                {% assign topics =  site.topics | where: 'year', site.year | where: 'category', cat.title | sort: "order" %}
+                                {% for topic in topics %}
                                 <div class="list-group-item flex-column align-items-start">
                                     <div class="d-flex w-100 justify-content-between mb-1">
-                                      <small>{{ item.time }}</small>
+                                      <small>{{ topic.time }}</small>
                                     </div>
-                                    <p class="mb-1"><strong>{{ item.title }}</strong></p>
-                                    <small>{{ item.speaker }}</small>
+                                    <p class="mb-1"><strong>{{ topic.title }}</strong></p>
+                                    <small>{{ topic.speaker }}</small>
                                 </div>
-                            {% endfor %}
+                                {% endfor %}
                             </div>
-                    </div>
+                        </div>
                     </div>
                         {% endfor %}
                     {% else %}
