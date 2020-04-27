@@ -16,7 +16,7 @@
 title: FlintConf
 email: info@stokedenton.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The Denton startup conference for hipsters, hackers, and hustlers
+  The virtual Denton startup conference for hipsters, hackers, and hustlers
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://flint.stokedenton.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /blog/:year/:month/:day/:title
